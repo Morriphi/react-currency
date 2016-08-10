@@ -1,0 +1,25 @@
+{
+  "name": "react-currency",
+  "version": "1.0.0",
+  "description": "Format a whole number as currency",
+  "main": "index.js",
+  "files": [
+    "dist/bundle.js"
+  ],
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "keywords": [
+    "currency",
+    "format",
+    "number",
+    "pound",
+    "pence",
+    "dollar",
+    "cent",
+    "euro",
+    "money"
+  ],
+  "author": "Philip Morris",
+  "license": "ISC"
+}
