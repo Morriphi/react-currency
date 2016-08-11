@@ -1,8 +1,14 @@
 const React = require('react')
 
 const Currency = React.createClass({
+  getDefaultProps() {
+    return {
+      symbol: '$'
+    }
+  },
+
   render () {
-    return (<span>Test</span>
+    return (<span>{this.props.symbol}</span>
     )
   }
 })

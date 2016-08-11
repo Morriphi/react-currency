@@ -5,10 +5,18 @@ const Currency = require('../src/Currency');
 
 describe('Currency', () => {
   it('renders', () => {
-    const props = {
-      searchTerm: ''
-    }
-    const wrapper = shallow(<Currency {...props} />)
-    expect(wrapper.find('span')).to.have.length(1)
+    expect(shallow(<Currency />).find('span')).to.have.length(1);
+  })
+
+  it('defaults to dollars', () => {
+    expect(shallow(<Currency />).text()).to.match(/^\$/);
+  })
+
+  it('renders currency symbol', () => {
+    expect(shallow(<Currency symbol="£" />).text()).to.match(/^£/);
+    expect(shallow(<Currency symbol="$" />).text()).to.match(/^\$/);
+    expect(shallow(<Currency symbol="€" />).text()).to.match(/^€/);
+    expect(shallow(<Currency symbol="DoesntEvenHaveToBeASymbol" />).text())
+      .to.match(/^DoesntEvenHaveToBeASymbol/);
   })
 })
