@@ -17,11 +17,6 @@ then visit localhost:8080
 npm run build
 ```
 
-### publish to npm
-Update the version number in package.json
-Make sure webpack.production.config.js contains the correct reference to exported entrypoint then
-```npm publish```
-
 ### Consume in project
 Install via npm
 ```
