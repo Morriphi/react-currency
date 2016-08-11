@@ -1,8 +1,8 @@
 {
   "name": "react-currency",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Format a whole number as currency",
-  "main": "entry.jsx",
+  "main": "dist/bundle.js",
   "files": [
     "dist/bundle.js"
   ],
